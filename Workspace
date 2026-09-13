@@ -1,4 +1,5 @@
-print(
+print("hello world")
+
 
 #lets look at real code
 library(haven)
