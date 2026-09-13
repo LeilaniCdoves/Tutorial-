@@ -1,0 +1,26 @@
+print(
+
+#lets look at real code
+library(haven)
+data <- read_sav("C:/Users/leila/OneDrive - University of Central Florida/Documents/GLM/Project -simple GLM.sav")
+View(data)
+#Question 1 a
+library(psych)
+describe(data$Neurot)
+table(data$Neurot, data$Jobperf)
+plot(data$Neurot, data$Jobperf)
+#Question 1 b 
+sim_reg <- lm(Jobperf ~ Neurot, data = data)
+summary(sim_reg)
+#Question d
+library(lm.beta)
+lm.beta(sim_reg)
+#Question f 
+describe(data$Jobperf)
+#Question 2
+library(haven)
+data1 <- read_sav("C:/Users/leila/OneDrive - University of Central Florida/Documents/GLM/Project -simple GLM - Copy.sav")
+data1[3, 1] <- 15
+data1[23, 1] <- 19
+View(data1)
+#
