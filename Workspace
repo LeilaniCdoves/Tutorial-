@@ -11,4 +11,4 @@ library(psych)
 describe(data$Neurot)
 table(data$Neurot, data$Jobperf)
 plot(data$Neurot, data$Jobperf)
-
+head(data)
