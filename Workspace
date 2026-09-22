@@ -1,10 +1,10 @@
 print("hello world")
-
+print("hi people")
 
 #lets look at real code
 library(haven)
 data <- read_sav("C:/Users/leila/OneDrive - University of Central Florida/Documents/GLM/Project -simple GLM.sav")
-View(data)
+
 
 #Question 1 a
 library(psych)
